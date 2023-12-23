@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Ellen App</title>
 </head>
 <body>
     <header>
-        <form>
-            <input type="search" placeholder="enter a city " required/>
-            <input type="submit" value="search"/>
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="enter a city " required
+            id="search-form-input"
+             class="search-form-input"/>
+            <input type="submit" value="search" class="search-form-button"/>
 
         </form>
     </header>
     <main>
         <div>
-    <h1>Paris</h1><p>
+    <h1 class="weather-app-city" id="city">Paris</h1><p>
         tuesday 14:49 scattered clouds
         <br/>Humidity: 66%, wind: 3.13km/h
     </p></div>
